@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Inventario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD de Inventario</h1>
+        <form id="inventoryForm">
+            <input type="hidden" id="itemId">
+            <input type="text" id="itemName" placeholder="Nombre del artículo" required>
+            <input type="number" id="itemQuantity" placeholder="Cantidad" required>
+            <input type="number" id="itemPrice" placeholder="Precio" step="0.01" required>
+            <button type="submit" id="submitBtn">Agregar Artículo</button>
+        </form>
+        <table id="inventoryTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
